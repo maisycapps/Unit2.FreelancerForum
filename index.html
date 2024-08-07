@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js" defer></script>
-    <title>Document</title>
+    <script src="index.js"></script>
+    <title>Freelancer Forum</title>
 </head>
-<body>
-    
+<body style="border: 2px solid;font-family: Arial, Helvetica, sans-serif; text-align: center;">
+    <!-- Header Text -->
+    <header>
+        <h1>Freelancer Forum</h1>
+    </header>
+
+    <!-- Average Starting Price -->
+    <section id="average" style="display: inline-block; border: 2px dotted;"></section>
+
+    <!-- SubHeader Text -->
+    <h2>Available Freelancers</h2>
+
+    <table style="display: inline-block; border: 2px dotted; padding: 3px; margin-bottom: 5px;">
+        <thead style="text-decoration: underline;">
+            <tr>
+                <!-- Name Header Text -->
+                <th scope="col">Name</th>
+
+                <!-- Occupation Header Text -->
+                <th scope="col">Occupation</th>
+
+                <!-- Starting Price Header Text -->
+                <th scope="col">Starting Price</th>
+            </tr>            
+        </thead>
+
+        <tbody>
+            <!-- Name List -->
+            <tr id="names"></tr>
+
+            <!-- Occupation List -->
+            <tr id="occupations"></tr>
+
+            <!-- Starting Price List -->
+            <tr id="startingPrice"></tr>
+        </tbody>
+    </table>
 </body>
 </html>
