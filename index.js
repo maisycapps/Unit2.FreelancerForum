@@ -24,11 +24,18 @@ folks.replaceChildren(...details);
 }
 render();
 
+// FREELANCER MAX
+const maxLancers = 15;
+
 // RANDOM GENERATOR
 function addNewbie() {
     const index = [Math.floor(Math.random() * newbies.length)];
+    if (freelancers.length < maxLancers){
     freelancers.push(newbies[index]);
     render(); 
+    } else {
+    return freelancers.splice(0);    
+    }
 }
 
 // PRICE RENDER
@@ -40,11 +47,12 @@ function priceRen(){
     avLine.innerText = `The average starting price is $${av}`;
     line.replaceChildren(avLine);
 }
+
 priceRen();
 
 // INTERVAL ADDITIONS
-const addNewbieIntervalId = setInterval(addNewbie, 5000);
-const updateAverageIntervalId = setInterval(priceRen, 5000)
+const addNewbieIntervalId = setInterval(addNewbie, 1000);
+const updateAverageIntervalId = setInterval(priceRen, 1000)
 
 
 
