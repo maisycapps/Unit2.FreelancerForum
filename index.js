@@ -34,7 +34,7 @@ function addNewbie() {
     freelancers.push(newbies[index]);
     render(); 
     } else {
-    return freelancers.splice(0);    
+    return freelancers.splice(2);    
     }
 }
 
